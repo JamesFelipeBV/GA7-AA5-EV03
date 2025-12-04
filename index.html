@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SAVI - Inventario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>SAVI - Sistema Automatizado de Ventas e Inventarios</h1>
+
+  <!-- Formulario para agregar/modificar productos -->
+  <form id="productForm">
+    <input type="hidden" id="editIndex">
+    <label>Nombre:</label>
+    <input type="text" id="nombre" required>
+    <label>Precio:</label>
+    <input type="number" id="precio" required>
+    <label>Stock:</label>
+    <input type="number" id="stock" required>
+    <button type="submit">Guardar</button>
+  </form>
+
+  <!-- Tabla de productos -->
+  <h2>Inventario</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Stock</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="productTable"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
